@@ -1,0 +1,44 @@
+.fondo {
+    -fx-background-color: #F1F5F9;
+}
+
+.header {
+    -fx-background-color: #ffffff;
+}
+
+.titulo {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #055467;
+}
+
+.boton {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 14px;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.azul {
+    -fx-background-color: #2ac1ec;
+    -fx-text-fill: white;
+}
+
+.boton:hover {
+    -fx-background-color: #29619a;
+    -fx-text-fill: white;
+    -fx-cursor:hand;
+}
+
+.texto {
+    -fx-font-family: "Corbel";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #055467;
+}
+
+#header {
+    -fx-background-color: #104987;
+}

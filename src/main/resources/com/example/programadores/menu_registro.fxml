@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="480.0" spacing="6.0" styleClass="fondo" stylesheets="@/css/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programadores.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox alignment="TOP_CENTER" prefHeight="89.0" prefWidth="345.0">
+        <children>
+            <VBox alignment="CENTER" prefHeight="89.0" prefWidth="112.0">
+                <children>
+                    <ImageView fitHeight="64.0" fitWidth="69.0" preserveRatio="true" smooth="true">
+                        <image>
+                            <Image url="@/images/signuplogo.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="89.0" prefWidth="262.0">
+                <children>
+                    <Label prefHeight="89.0" prefWidth="242.0" styleClass="titulo" text="REGISTRO DE USUARIO" textAlignment="CENTER" wrapText="true">
+                        <font>
+                            <Font name="JetBrains Mono Bold" size="12.0" />
+                        </font></Label>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="345.0">
+        <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="160.0">
+                <children>
+                    <Label fx:id="welcomeText" prefHeight="30.0" prefWidth="135.0" styleClass="texto" text="Nombre de Usuario:" />
+                </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                <children>
+                    <TextField fx:id="txtUsuarioLogin" prefHeight="30.0" prefWidth="200.0" promptText=" Introduce tu usuario  (min. 5 car.)" />
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="345.0">
+        <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="160.0">
+                <children>
+                    <Label prefHeight="30.0" prefWidth="135.0" styleClass="texto" text="Contraseña:" />
+                </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0">
+                <children>
+                    <TextField fx:id="txtPasswordLogin" prefHeight="30.0" prefWidth="200.0" promptText="Introduce tu contraseña" />
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="160.0">
+            <children>
+               <Label prefHeight="30.0" prefWidth="135.0" styleClass="texto" text="Genero:" />
+            </children>
+         </VBox>
+         <VBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <RadioButton fx:id="rbHombre" mnemonicParsing="false" text="Hombre">
+                        <toggleGroup>
+                           <ToggleGroup fx:id="Genero" />
+                        </toggleGroup>
+                     </RadioButton>
+                  </children></HBox>
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <RadioButton fx:id="rbMujer" mnemonicParsing="false" text="Mujer" toggleGroup="$Genero" />
+                  </children></HBox>
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <RadioButton fx:id="rbPrefieroNoDecirlo" mnemonicParsing="false" text="Prefiero no decirlo" toggleGroup="$Genero" />
+                  </children></HBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <HBox prefHeight="50.0" prefWidth="200.0">
+      <children>
+         <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="160.0">
+            <children>
+               <Label prefHeight="43.0" prefWidth="135.0" styleClass="texto" text="Lenguaje de programacion:" wrapText="true" />
+            </children>
+         </VBox>
+         <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <ComboBox fx:id="cbLenguajeRegistro" prefWidth="150.0" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+    <HBox alignment="CENTER" prefHeight="68.0" prefWidth="345.0">
+        <children>
+            <VBox alignment="CENTER" prefHeight="68.0" prefWidth="243.0">
+                <children>
+                    <Button fx:id="btnRegistrar" onAction="#onHelloButtonClick" prefHeight="35.0" prefWidth="120.0" styleClass="boton, azul" text="Registrar">
+                        <graphic>
+                            <ImageView fitHeight="23.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+                                <image>
+                                    <Image url="@/images/signup.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <font>
+                            <Font name="Fira Code Regular" size="12.0" />
+                        </font>
+                    </Button>
+                </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="68.0" prefWidth="296.0">
+                <children>
+                    <Button fx:id="btnIrLogin" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" styleClass="boton" text="Volver al login">
+                        <graphic>
+                            <ImageView fitHeight="23.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+                                <image>
+                                    <Image url="@/images/login.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <font>
+                            <Font name="Corbel" size="12.0" />
+                        </font>
+                    </Button>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+</VBox>

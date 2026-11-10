@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="420.0" prefWidth="480.0" spacing="6.0" styleClass="fondo" stylesheets="@/css/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programadores.HelloController">
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="480.0" spacing="6.0" styleClass="fondo" stylesheets="@/css/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programadores.MenuInicialController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -63,7 +63,7 @@
       <children>
          <VBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="192.0">
             <children>
-                <Button onAction="#onHelloButtonClick" prefHeight="30.0" prefWidth="120.0" styleClass="boton, azul" text="Login">
+                <Button onAction="#onLoginButtonClick" prefHeight="30.0" prefWidth="120.0" styleClass="boton, azul" text="Login">
                   <graphic>
                      <ImageView fitHeight="23.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" smooth="true">
                       <image>
@@ -79,7 +79,7 @@
          </VBox>
          <VBox alignment="CENTER" prefHeight="75.0" prefWidth="184.0">
             <children>
-               <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" styleClass="boton" text="Registrarse">
+               <Button mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="30.0" prefWidth="120.0" styleClass="boton" text="Registrarse">
                   <graphic>
                       <ImageView fitHeight="23.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" smooth="true">
                           <image>

@@ -22,12 +22,12 @@
 }
 
 .azul {
-    -fx-background-color: #2ac1ec;
+    -fx-background-color: #29619a;
     -fx-text-fill: white;
 }
 
 .boton:hover {
-    -fx-background-color: #29619a;
+    -fx-background-color: #0b35bd;
     -fx-text-fill: white;
     -fx-cursor:hand;
 }
